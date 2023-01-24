@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">MyFYP</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="choose_preference">Choose Your Preferences</string>
+    <string name="preference_msg"> This will help you to create best user experience </string>
+    <string name="gadgets"> Electronic  "\n"  Gadgets </string>
+    <string name="appliances">Electronic  "\n"  Appliances</string>
+
+    <string-array name="price">
+        <item>Rs</item>
+        <item>$</item>
+    </string-array>
+
+    <string-array name="weight">
+        <item>Kg</item>
+        <item>gram</item>
+        <item>Litre</item>
+        <item>ml</item>
+    </string-array>
+</resources>

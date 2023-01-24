@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.acs.myfyp.SignupContinue"
+    android:id="@+id/outer_layout">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="41dp"
+        android:gravity="center"
+        android:text="@string/choose_preference"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
+        android:gravity="center"
+        android:textSize="15dp"
+        android:textStyle="normal"
+        android:textColor="@color/aluminum"
+        android:text="@string/preference_msg"
+        android:id="@+id/textView" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="25dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:id="@+id/inner_layout">
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:text="Electronic gadgets"
+            android:id="@+id/gadgets"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="70dp"
+            android:text="Men Fashion"
+            android:id="@+id/men_fashion"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:text="Electronic Appliances"
+            android:id="@+id/electronic" />
+
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/men_fashion"
+            android:layout_alignBottom="@+id/men_fashion"
+            android:layout_alignStart="@+id/electronic"
+            android:text="Women Fashion"
+            android:id="@+id/women_fashion"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/men_fashion"
+            android:layout_below="@id/men_fashion"
+            android:layout_marginTop="35dp"
+            android:text="Beauty"
+            android:id="@+id/beauty"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Health and medicine"
+            android:layout_alignBaseline="@id/beauty"
+            android:layout_alignBottom="@+id/beauty"
+            android:layout_alignStart="@id/women_fashion"
+            android:id="@+id/health"
+            />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Home and Living"
+            android:layout_alignStart="@+id/beauty"
+            android:layout_below="@+id/beauty"
+            android:layout_marginTop="35dp"
+            android:id="@+id/home"
+            />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sports"
+            android:id="@+id/sports"
+            android:layout_alignBaseline="@id/home"
+            android:layout_alignBottom="@id/home"
+            android:layout_alignStart="@id/health"/>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Grocery"
+            android:id="@+id/grocery"
+            android:layout_below="@id/home"
+            android:layout_marginTop="35dp"
+            android:layout_alignStart="@+id/home"/>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Food"
+            android:id="@+id/food"
+            android:layout_alignBaseline="@id/grocery"
+            android:layout_alignBottom="@id/grocery"
+            android:layout_alignStart="@id/sports"/>
+
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/signupBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/inner_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:background="@color/primary"
+        android:padding="10dp"
+        android:text="Create account" />
+
+
+</RelativeLayout>

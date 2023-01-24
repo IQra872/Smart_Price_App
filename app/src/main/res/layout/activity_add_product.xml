@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.acs.myfyp.AddProduct">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="56dp"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp">
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp">
+
+                <EditText android:id="@+id/Product_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textCapWords"
+                    android:hint="Product Name" />
+            </android.support.design.widget.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp">
+
+                <EditText android:id="@+id/Price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textCapWords"
+                    android:hint="product Price" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp">
+
+                <EditText android:id="@+id/weight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Weight" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp">
+
+                <EditText android:id="@+id/manufacturer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="manufacturer" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp">
+
+                <AutoCompleteTextView android:id="@+id/store"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Store"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Product Category"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="8dp"
+                android:textSize="15dp"/>
+
+
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/radio_category"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                >
+            
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/gadgets"
+                    android:id="@+id/radio_gadgets"/>
+
+                <RadioButton
+                    android:id="@+id/radio_electronic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginEnd="6dp"
+                    android:text="@string/appliances" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="70dp"
+                    android:text="Men Fashion"
+                    android:id="@+id/radio_men_fashion"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/radio_men_fashion"
+                    android:layout_alignBottom="@+id/radio_men_fashion"
+                    android:layout_alignStart="@+id/radio_electronic"
+                    android:text="Women Fashion"
+                    android:id="@+id/radio_women_fashion"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@id/radio_men_fashion"
+                    android:layout_below="@id/radio_men_fashion"
+                    android:layout_marginTop="35dp"
+                    android:text="Beauty"
+                    android:id="@+id/radio_beauty"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Health and medicine"
+                    android:layout_alignBaseline="@id/radio_beauty"
+                    android:layout_alignBottom="@+id/radio_beauty"
+                    android:layout_alignStart="@id/radio_women_fashion"
+                    android:id="@+id/radio_health"
+                    />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Home and Living"
+                    android:layout_alignStart="@+id/radio_beauty"
+                    android:layout_below="@+id/radio_beauty"
+                    android:layout_marginTop="35dp"
+                    android:id="@+id/radio_home"
+                    />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sports"
+                    android:id="@+id/radio_sports"
+                    android:layout_alignBaseline="@id/radio_home"
+                    android:layout_alignBottom="@id/radio_home"
+                    android:layout_alignStart="@id/radio_health"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Grocery"
+                    android:id="@+id/radio_grocery"
+                    android:layout_below="@id/radio_home"
+                    android:layout_marginTop="35dp"
+                    android:layout_alignStart="@+id/radio_home"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Food"
+                    android:id="@+id/radio_food"
+                    android:layout_alignBaseline="@id/radio_grocery"
+                    android:layout_alignBottom="@id/radio_grocery"
+                    android:layout_alignStart="@id/radio_sports"/>
+
+            </RelativeLayout>
+
+            </RadioGroup>
+
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/AddProduct"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="24dp"
+                android:background="@color/primary"
+                android:padding="12dp"
+                android:text="Add Product"/>
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/GoToMain"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="24dp"
+                android:background="@color/primary"
+                android:padding="12dp"
+                android:text="Main Activity"/>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>

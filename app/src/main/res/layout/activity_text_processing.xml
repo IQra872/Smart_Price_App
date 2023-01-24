@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.acs.myfyp.TextProcessing">
+
+
+   <ImageView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:id="@+id/imageView"
+       android:layout_above="@+id/scrollView2"/>
+
+   <LinearLayout
+       android:layout_height="80dp"
+       android:layout_width="300dp"
+       android:layout_alignParentBottom="true"
+       android:layout_alignParentStart="true"
+       android:orientation="horizontal"
+       android:id="@+id/linearLayout">
+
+      <ScrollView
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+
+         <TextView
+             android:id="@+id/viewText"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="#123"
+             android:textColor="#ffffff" />
+      </ScrollView>
+   </LinearLayout>
+   <ImageButton
+       android:layout_width="100dp"
+       android:layout_height="80dp"
+       android:src="@mipmap/ic_launcher"
+       android:background="@null"
+       android:id="@+id/processImage"
+       android:layout_alignParentBottom="true"
+       android:layout_alignParentEnd="true" />
+</RelativeLayout>
